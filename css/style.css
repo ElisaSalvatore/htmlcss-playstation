@@ -1,0 +1,140 @@
+.btn {
+    margin: 20px 0;
+    height: 30px;
+    border-radius: 15px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt_big {
+    max-width: 150px;
+}
+
+.bt_blue {
+    background-color: blue;
+}
+
+.bt_small {
+    max-width: 100px;
+}
+
+.bt_red {
+    background-color: red;
+}
+
+/* HEADER */
+.pre-header {
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sony_logo {
+    padding: 0 10px;
+    width: 100px;
+    height: 100%;
+}
+
+.pl_logo {
+    width: 80px;
+    height: 80px;
+    background: url('../img/play_logo.svg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+}
+/* NAVBAR */
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    background-color: #fff;
+}
+
+/* JUMBOTRON */
+.container-fluid.jumbotron {
+    height: 100vh;
+    /* background: url("../img/jumbo-bg.png") no-repeat; */
+    background-color: darkred;
+    background-size: cover;
+}
+
+.container_returnal {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: darkgreen;
+}
+
+.returnal_banner_logo img{
+    width: 60%;
+}
+
+/* LIST JUMBO */
+.container_list_jumbo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: goldenrod;
+}
+.item_list {
+    border: 2px #000 solid;
+}
+
+.item_list img {
+    border-radius: 10px;
+    width: 100%
+}
+
+/* CONSOLE */
+.ps_no_limits {
+    font-size: 15px;
+    color: blue;
+    text-transform: uppercase;
+} 
+
+.ps_title {
+    font-size: 40px;
+}
+
+.ps_title_description {
+    font-size: 15px;
+    color: grey;
+    font-weight: 400;
+}
+
+.container_console {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image_console {
+    background-color: brown;
+}
+
+/* TOOLS */
+.container_tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.tools_item img{
+    width: 80%;
+    opacity: 0.5;
+}
+
+.tools_item img:hover {
+    opacity: 1;
+    border-bottom: 2px blue solid;
+}
