@@ -4,8 +4,7 @@
     border-radius: 15px;
     color:#fff;
     vertical-align: text-top;
-}
-
+}    
 .bt_big {
     max-width: 150px;
 }
@@ -106,6 +105,10 @@
     width: 100%
 }
 
+.item_list img:hover {
+    margin-top: -10px;
+}
+
 /* SECTION TITLE TEXT */
 .ps_no_limits {
     font-size: 15px;
@@ -137,13 +140,18 @@
 
 /* SECTION TOOLS */
 .tools_item {
+    text-align: center;
     opacity: 0.5;
 }
 
-.tools_item:hover {
-    border-bottom: 2px blue solid;
+.tools_item:first-child {
     opacity: 1;
-    transition: opacity 1s;
+    border-bottom: 2px #559bdd solid;
+}
+
+.tools_item:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .tools_item img{
@@ -196,7 +204,40 @@
     width: 100%;
 }
 
-/* MQ PS PLUS e NOW */
+/* SECTION FOOTER */
+.container_footer {
+    background-color: #024099;
+    padding: 50px 0;
+}
+
+.playstation_icon img {
+    width: 60px;
+}
+
+.copyright_sony img {
+    width: 120px;
+}
+
+.playstation_icon, 
+.link_footer_n {
+    padding-top: 20px;
+}
+
+.link_footer_n ul {
+    padding: 0;
+}
+
+.link_footer_n ul li {
+    list-style: none;
+    padding: 5px
+}
+
+.link_footer_n ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MQ PS PLUS e PS NOW */
 @media screen and (max-width: 767px) {
     .playstation_plus_3games,
     .playstation_now_3games {
