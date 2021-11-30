@@ -1,3 +1,4 @@
+/* BUTTONS */
 .btn {
     margin: 20px 0;
     height: 30px;
@@ -56,37 +57,51 @@ a.button-info:hover {
     height: 100%;
 }
 
-.navbar-brand {
-    width: 60px;
-    height: 60px;
-    background: url('../img/play_logo.svg') no-repeat;
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    align-items: center;
-}
-/*  SECTION NAVBAR */
-.navbar {
+/* SECTION NAVBAR */
+.ps_navbar {
     height: 80px;
+    font-size: 15px;
 }
 
-.navbar-nav {
-    background-color: #fff;
-}
-
-.nav-item i {
-    font-size: 20px;
-}
-
-.chevron_dropdown{
+.dropdown-toggle::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 10px;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    vertical-align: middle;
+    border-top: 0;
+    color: #ccc;
 }
 
-.chevron_dropdown img {
-    width: 100%;
+/* DROPDOWN ITEM */
+
+.dropdown-item:hover {
+    background: none;
 }
+
+.dropdown-item img {
+    width: 60%;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-item a:hover {
+    color: #004fe2;
+    text-decoration: underline;
+}
+
+.search-nav img {
+    width: 30px;
+}
+
+.search-nav.form-control {
+    width: 50%;
+    line-height: 1;
+  }
 
 /* SECTION JUMBOTRON */
 .container-fluid.jumbotron {
@@ -271,6 +286,15 @@ a.button-info:hover {
     color: #fff;
     text-decoration: none;
 }
+
+/* MQ NAVBAR SEARCH INPUT */
+@media (min-width: 992px) { 
+
+    #search-bar-hide {
+        display: none;
+    }
+}
+
 
 /* MQ PS PLUS e PS NOW */
 @media screen and (max-width: 767px) {
